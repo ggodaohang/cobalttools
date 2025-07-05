@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr" class="dark">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cobalt.tools官网入口 - 免费好用的在线视频下载工具</title>
+  <meta name="keywords" content="Cobalt.tools, 视频下载, 音频下载, 开源工具, 无广告下载" />
+  <meta name="description" content="Cobalt.tools 是一款开源的在线媒体下载工具，支持从多个主流平台下载视频、音频和图片。它提供多种格式和分辨率选择，完全免费且无广告，无需注册即可使用。">
+
+  <link rel="shortcut icon" href="./files/cobalt.png">
+  <link rel="preload stylesheet" href="./files/style.9b4b7f3f.css" as="style">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#FF4D4F',
+            secondary: '#FF7A45',
+            dark: '#1E1E2E',
+            light: '#F5F5F5',
+            'dark-gray': '#4E4E5E',
+            'light-gray': '#E5E5E5'
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+        },
+      }
+    }
+  </script>
+  
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+      .text-shadow {
+        text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      }
+      .nav-link {
+        @apply relative text-dark-gray hover:text-primary transition-colors duration-300;
+      }
+      .nav-link::after {
+        @apply content-[''] absolute w-0 h-0.5 bg-primary left-0 -bottom-1 transition-all duration-300;
+      }
+      .nav-link:hover::after {
+        @apply w-full;
+      }
+      .nav-link.active {
+        @apply text-primary font-medium;
+      }
+      .nav-link.active::after {
+        @apply w-full;
+      }
+      .btn-primary {
+        @apply bg-primary hover:bg-primary/90 text-white font-medium py-2 px-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5;
+      }
+      .btn-secondary {
+        @apply bg-white border border-primary text-primary hover:bg-primary/5 font-medium py-2 px-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300;
+      }
+      .feature-card {
+        @apply bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1;
+      }
+      .faq-title {
+        @apply text-[clamp(1.5rem,3vw,2rem)] font-bold text-dark mb-6;
+      }
+      .title {
+        @apply text-xl font-bold text-dark mb-3;
+      }
+      .details {
+        @apply text-dark-gray leading-relaxed;
+      }
+      .entry-card {
+        @apply bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center;
+      }
+      .entry-icon {
+        @apply text-4xl mb-4;
+      }
+      .entry-title {
+        @apply text-lg font-bold mb-2;
+      }
+      .entry-desc {
+        @apply text-dark-gray text-sm mb-4;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <nav id="navbar" class="fixed w-full top-0 z-50 transition-all duration-300 bg-white/90 backdrop-blur-md shadow-sm">
+      <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+        <div class="flex items-center">
+          <span class="text-xl font-bold text-primary">Cobalt.tools</span>
+        </div>
+        
+        <div class="hidden md:flex space-x-8">
+          <a href="#home" class="nav-link active">首页</a>
+          <a href="#entries" class="nav-link">入口</a>
+          <a href="#introduction" class="nav-link">介绍</a>
+          <a href="#features" class="nav-link">特点</a>
+        </div>
+        
+        <button id="menu-toggle" class="md:hidden text-dark-gray hover:text-primary focus:outline-none">
+          <i class="fa-solid fa-bars text-2xl"></i>
+        </button>
+      </div>
+      
+      <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-light-gray shadow-md">
+        <div class="container mx-auto px-4 py-3 flex flex-col space-y-4">
+          <a href="#home" class="nav-link py-2 active">首页</a>
+          <a href="#entries" class="nav-link py-2">入口</a>
+          <a href="#introduction" class="nav-link py-2">介绍</a>
+          <a href="#features" class="nav-link py-2">特点</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="Layout" data-v-b2cf3e0b="">
+      <div class="VPContent is-home" id="VPContent" data-v-b2cf3e0b="" data-v-a494bd1d="">
+        <div id="home" class="VPHome pt-24" data-v-a494bd1d="" data-v-d82743a8="">
+          <div class="VPHero has-image VPHomeHero" data-v-d82743a8="" data-v-fd2650d5="">
+            <div class="container" data-v-fd2650d5="">
+              <div class="main" data-v-fd2650d5="">
+                <h1 class="name" data-v-fd2650d5="" style="display: flex; align-items: center; white-space: nowrap;">
+                  <span style="color:#111;">Cobalt.tools</span>
+                </h1>
+
+                <p class="text" data-v-fd2650d5="" style="line-height:1.2rem;margin:10px 0;"><span
+                    style="font-size:1.2rem;font-weight:400;"><strong>开源、无广告的音视频下载工具</strong></span><br /><span
+                    style="font-size:1rem;font-weight:400;">支持从多个主流平台下载视频、音频和图片<br>提供多种格式和分辨率选择，完全免费且无广告，无需注册即可使用<br></span></p>
+
+                <div class="actions" data-v-fd2650d5="">
+                  
+                </div>
+              </div>
+
+              <div class="image" data-v-fd2650d5=""><div class="image-container" data-v-fd2650d5=""><div
+                    class="image-bg" data-v-fd2650d5=""></div><img class="VPImage image-src"
+                    src="./files/cobalt.jpg" alt="Cobalt.tools" data-v-6db2186b=""
+                    style="border-radius:15px;background: #fff;padding: 5px;border: 1px solid #eee;"></div></div>
+
+          </div>
+        </div>
+
+        <div id="entries" class="VPFeatures VPHomeFeatures py-12" data-v-d82743a8="" data-v-ba861f23="">
+          <h2 class="faq-title" style="text-align: center; margin-bottom: 20px;">
+          </h2>
+          <div class="container" data-v-ba861f23="">
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6962852649727169"
+     crossorigin="anonymous"></script>
+<!-- 横向广告 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6962852649727169"
+     data-ad-slot="2494439074"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6" data-v-ba861f23="">
+              <div class="item" data-v-ba861f23="">
+                <span class="VPLink VPFeature" data-v-ba861f23="" data-v-837f6cca="" data-v-8f4dc553="">
+                  <article class="entry-card" data-v-837f6cca="">
+                    <h3 class="entry-title" data-v-837f6cca="">官网入口</h3>
+                    <p class="entry-desc" data-v-837f6cca="">开源的在线媒体下载<br>直接在网页上使用Cobalt.tools进行下载</p>
+                    <a href="https://cobalt.tools/" target="_blank" class="btn-primary inline-block">
+                      访问官网
+                    </a>
+                  </article>
+                </span>
+              </div>
+              
+              <div class="item" data-v-ba861f23="">
+                <span class="VPLink VPFeature" data-v-ba861f23="" data-v-837f6cca="" data-v-8f4dc553="">
+                  <article class="entry-card" data-v-837f6cca="">
+                    <h3 class="entry-title" data-v-837f6cca="">电子书/电影/音乐/漫画/游戏下载</h3>
+                    <p class="entry-desc" data-v-837f6cca="">100W+电子书，2000+4K电影，3000+无损音乐，植物大战僵尸红警游戏下载</p>
+                    <a href="https://wangpanziyuan.pages.dev/" target="_blank" class="btn-primary inline-block">
+                      立即下载
+                    </a>
+                  </article>
+                </span>
+              </div>
+
+              <div class="item" data-v-ba861f23="">
+                <span class="VPLink VPFeature" data-v-ba861f23="" data-v-837f6cca="" data-v-8f4dc553="">
+                  <article class="entry-card" data-v-837f6cca="">
+                    <h3 class="entry-title" data-v-837f6cca="">天涯神贴1000篇精华帖</h3>
+                    <p class="entry-desc" data-v-837f6cca="">KK金融财经、股市楼市、经济预测<br>天涯神贴永流传，在线下载</p>
+                    <a href="https://pan.xunlei.com/s/VOSxaOjTVxQzSPYjb5eJ4GuWA1?pwd=gxtm" target="_blank" class="btn-primary inline-block">
+                      访问GitHub
+                    </a>
+                  </article>
+                </span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+<br>
+
+        <div id="introduction" class="VPFeatures VPHomeFeatures" data-v-d82743a8="" data-v-ba861f23="">
+          <h2 class="faq-title" style="text-align: center; font-size: 24px; font-weight: bold; margin-bottom: 20px;">
+           Cobalt.tools介绍
+          </h2>
+          <div class="container" data-v-ba861f23="">
+            <div class="items" data-v-ba861f23="" style="margin-bottom: 40px;">
+              <div class="grid-1 item" data-v-ba861f23="">
+                <span class="VPLink VPFeature" data-v-ba861f23="" data-v-837f6cca="" data-v-8f4dc553="">
+                  <article class="box feature-card" data-v-837f6cca="">
+                    <p class="details" data-v-837f6cca="" style="font-size: 16px; line-height: 1.8;">
+                      Cobalt.tools 是一款开源的在线媒体下载工具，旨在为用户提供快速、便捷且无广告的音视频下载体验。它支持从多个主流平台（如 YouTube、Bilibili、Instagram、TikTok 等）下载视频、音频和图片，提供高达 8K 的视频分辨率和多种音频格式。Cobalt.tools 的界面简洁，无需注册或登录，用户只需粘贴链接即可开始下载。此外，它还提供批量下载、字幕下载和自定义文件名等功能，满足不同用户的个性化需求。
+                    </p>
+                    <p class="details" data-v-837f6cca="" style="font-size: 16px; line-height: 1.8; margin-top: 15px;">
+                      Cobalt.tools 的核心优势在于其开源性和隐私保护。作为一个开源项目，用户可以在 GitHub 查看其源代码，确保工具的安全性和透明性。它不收集用户数据，不包含任何追踪器，确保用户的下载行为安全、私密。此外，Cobalt.tools 支持网页版和 Docker 自托管部署，用户可以根据自己的需求选择使用方式。
+                    </p>
+                  </article>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="features" class="VPFeatures VPHomeFeatures" data-v-d82743a8="" data-v-ba861f23="">
+          <h2 class="faq-title" style="text-align: center; font-size: 24px; font-weight: bold; margin-bottom: 20px;">
+           Cobalt.tools功能特点
+          </h2>
+          <div class="container" data-v-ba861f23="">
+            <div class="items" data-v-ba861f23="" style="margin-bottom: 40px;">
+              <div class="grid-1 item" data-v-ba861f23="">
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6962852649727169"
+     crossorigin="anonymous"></script>
+<!-- 横向广告 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6962852649727169"
+     data-ad-slot="2494439074"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+           <div class="grid grid-cols-1 md:grid-cols-3 gap-6" data-v-ba861f23="">
+              <div class="item" data-v-ba861f23="">
+                <span class="VPLink VPFeature" data-v-ba861f23="" data-v-837f6cca="" data-v-8f4dc553="">
+                  <article class="entry-card" data-v-837f6cca="">
+                    <h3 class="entry-title" data-v-837f6cca="">多平台支持</h3>
+                    <p class="entry-desc" data-v-837f6cca="">Cobalt.tools 支持从多个主流平台下载内容，包括 YouTube、Bilibili、Instagram、TikTok、Twitter/X、Reddit、SoundCloud 等。无论是国内还是国际的视频内容，Cobalt.tools 都能轻松应对，用户无需频繁更换工具。</p>
+                  </article>
+                </span>
+              </div>
+              
+              <div class="item" data-v-ba861f23="">
+                <span class="VPLink VPFeature" data-v-ba861f23="" data-v-837f6cca="" data-v-8f4dc553="">
+                  <article class="entry-card" data-v-837f6cca="">
+                    <h3 class="entry-title" data-v-837f6cca="">多种格式与分辨率</h3>
+                    <p class="entry-desc" data-v-837f6cca="">Cobalt.tools 提供多种视频格式（如 MP4、OGG、WAV 等）和音频格式（如 MP3、OPUS 等），支持从 480p 到 8K+ 的视频分辨率。用户可以根据自己的需求选择不同的格式和分辨率，满足不同设备和场景的需求。</p>
+                  </article>
+                </span>
+              </div>
+
+              <div class="item" data-v-ba861f23="">
+                <span class="VPLink VPFeature" data-v-ba861f23="" data-v-837f6cca="" data-v-8f4dc553="">
+                  <article class="entry-card" data-v-837f6cca="">
+                    <h3 class="entry-title" data-v-837f6cca="">无广告、免登录体验</h3>
+                    <p class="entry-desc" data-v-837f6cca="">Cobalt.tools 提供完全免费、无广告、无需注册的用户体验。用户无需忍受广告干扰或完成繁琐的验证步骤，即可快速下载所需的媒体文件。</p>
+                  </article>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="VPFooter" data-v-b2cf3e0b="" data-v-f7fc41f4=""><div class="container" data-v-f7fc41f4=""><p class="copyright" data-v-f7fc41f4=""><strong>觉得很不错？那就按住Ctrl+D键组合，把本网站加入你的浏览器收藏夹吧！</strong></p>
+
+    <p class="copyright" data-v-f7fc41f4="">Copyright ©2025 Cobalt.tools 最新官网入口</p>
+<p class="copyright" data-v-f7fc41f4="">友情链接：<a href="https://www.xxsnav.com/" target="_blank" >XXS导航</a></p>
+         </div></footer>
+
+    </div>
+  </div>
+
+  <script>
+    // 导航栏滚动效果
+    window.addEventListener('scroll', function() {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('shadow-md');
+        navbar.classList.add('py-2');
+        navbar.classList.remove('py-3');
+      } else {
+        navbar.classList.remove('shadow-md');
+        navbar.classList.add('py-3');
+        navbar.classList.remove('py-2');
+      }
+      
+      // 更新导航栏激活状态
+      const sections = document.querySelectorAll('div[id]');
+      const navLinks = document.querySelectorAll('.nav-link');
+      
+      let current = '';
+      
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (pageYOffset >= (sectionTop - 100)) {
+          current = section.getAttribute('id');
+        }
+      });
+      
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+          link.classList.add('active');
+        }
+      });
+    });
+    
+    // 移动端菜单切换
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenu.classList.toggle('hidden');
+    });
+    
+    // 平滑滚动
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        
+        // 关闭移动端菜单（如果打开）
+        document.getElementById('mobile-menu').classList.add('hidden');
+        
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 80,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
